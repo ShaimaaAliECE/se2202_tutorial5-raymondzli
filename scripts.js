@@ -1,5 +1,5 @@
 let nextPlayer = 'X'; // takes a value of either 'X' or 'O' according to the game turns
-let nextPlayer1 = 'O'
+let nextPlayer1 = 'O';
 //initialize the game
 
 // use the value stored in the nextPlayer variable to indicate who the next player is
@@ -11,9 +11,10 @@ createGameBoard()
 function createGameBoard()
 {
     // Programatically add a button with square brackets enclosing an empty space to each cell in the gameboard
-   let btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9 = document.createElement("button");
+    document.getElementById('c1');
+    let btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9 = document.createElement("button");
 
-   btn1.innerHTML = "[ ]";
+   btn1.getElementById('c1')= "[ ]";
    btn2.innerHTML = "[ ]";
    btn3.innerHTML = "[ ]";
    btn4.innerHTML = "[ ]";
@@ -22,6 +23,7 @@ function createGameBoard()
    btn7.innerHTML = "[ ]";
    btn8.innerHTML = "[ ]";
    btn9.innerHTML = "[ ]";
+
    let board = [[btn1,btn2,btn3],
             [ btn4,btn5,btn6],
             [ btn7,btn8,btn9]];
@@ -35,7 +37,7 @@ let btns = document.querySelectorAll('button');
 for (let i=0; i<btns.length; i++)
 {
     btns[i].addEventListener('click', (event) => { takeCell(event)});
-    document.getElementById(takeCell(btns[i])).addEventListener("click", event =>{btns[i]});
+   // document.getElementById(takeCell(btns[i])).addEventListener("click", event =>{btns[i]});
 }
 
 // This function will be used to respond to a click event on any of the board buttons.
