@@ -11,22 +11,32 @@ createGameBoard()
 function createGameBoard()
 {
     // Programatically add a button with square brackets enclosing an empty space to each cell in the gameboard
-    let btn = document.createElement('c1');
-    btn.innerHTML = "[ ]";
-    //let btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9 = document.createElement("button");
-   btn1.innerHTML = "[ ]";
-   btn2.innerHTML = "[ ]";
-   btn3.innerHTML = "[ ]";
-   btn4.innerHTML = "[ ]";
-   btn5.innerHTML = "[ ]";
-   btn6.innerHTML = "[ ]";
-   btn7.innerHTML = "[ ]";
-   btn8.innerHTML = "[ ]";
-   btn9.innerHTML = "[ ]";
+    
+    let btn1 = document.getElementById('c1');
+    let btn2 = document.getElementById('c2');
+    let btn3 = document.getElementById('c3');
+    let btn4 = document.getElementById('c4');
+    let btn5 = document.getElementById('c5');
+    let btn6 = document.getElementById('c6');
+    let btn7 = document.getElementById('c7');
+    let btn8 = document.getElementById('c8');
+    let btn9 = document.getElementById('c9');
+
+    btn1.innerHTML = "[ ]";
+    btn2.innerHTML = "[ ]";
+    btn3.innerHTML = "[ ]";
+    btn4.innerHTML = "[ ]";
+    btn5.innerHTML = "[ ]";
+    btn6.innerHTML = "[ ]";
+    btn7.innerHTML = "[ ]";
+    btn8.innerHTML = "[ ]";
+    btn9.innerHTML = "[ ]";
+    
+
 
    
 
-   document.body.appendChild(btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9);
+   //document.td.appendChild(btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9);
    
 }
 
