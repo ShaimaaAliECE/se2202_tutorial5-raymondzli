@@ -11,9 +11,9 @@ createGameBoard()
 function createGameBoard()
 {
     // Programatically add a button with square brackets enclosing an empty space to each cell in the gameboard
-    let btn1 = document.createElement('c1');
-    
-    let btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9 = document.createElement("button");
+    let btn = document.createElement('c1');
+    btn.innerHTML = "[ ]";
+    //let btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9 = document.createElement("button");
    btn1.innerHTML = "[ ]";
    btn2.innerHTML = "[ ]";
    btn3.innerHTML = "[ ]";
