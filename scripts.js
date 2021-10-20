@@ -36,7 +36,7 @@ function createGameBoard()
 
    
 
-   //document.td.appendChild(btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9);
+   //document.body.appendChild(btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9);
    
 }
 
@@ -46,8 +46,9 @@ for (let i=0; i<btns.length; i++)
 {
     btns[i].addEventListener('click', (event) => { takeCell(event)});
     
-   // document.getElementById(takeCell(btns[i])).addEventListener("click", event =>{btns[i]});
+   
 }
+document.getElementById("c1").addEventListener("click", takeCell(event))
 
 // This function will be used to respond to a click event on any of the board buttons.
 function takeCell(event)
@@ -56,7 +57,7 @@ function takeCell(event)
         When the button is clicked, the space inside its square brackets is replaced by the value in the nextPlayer before switching it
     */
     btns[i].getElementById("[ ]").addEventListener("click", event =>{console.log(nextPlayer)});
-    //btns[i].getElementById("[ ]").addEventListener("click", event =>{console.log(nextPlayer1)});
+    
     event.target.disabled = 'disabled';
     // Make sure the button is clickable only once (I didn't mention how to do that, look it up :) )
 
